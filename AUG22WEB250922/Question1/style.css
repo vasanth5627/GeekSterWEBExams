@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 250px;
+    width: 900px;
+    background: lightgray;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
