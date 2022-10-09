@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    color: white;
+}
+
+h1 {
+    font-size: 70px;
+    color: orange;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 20px;
+    background: black;
+}
+
+.team {
+    margin-top: 20px;
+}
+
+.team:nth-child(4) {
+    text-align: center;
+    padding: 0px 120px;
+}
+
+.image img {
+    height: 300px;
+    width: 300px;
+    border: 7px solid orange;
+    border-radius: 50%;
+}
+
+.team:nth-child(5) {
+    margin-top: 70px;
+}
+
+.team:nth-last-child() {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.card-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    height: 300px;
+    width: 250px;
+    background: white;
+    border-bottom: 8px solid orange;
+    margin: 5px 20px;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h4 {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
