@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+label{
+    margin-bottom: 10px;
+    color: gray;
+    font-weight: 700;
+}
+
+textarea{
+    padding: 5px 5px 5px 20px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.star {
+    color: red;
+}
+
+.i-edit {
+    padding: 1px 5px;
+    background: gray;
+    color: white;
+    border-radius: 50%;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inter-container{
+    height: 550px;
+    width: 900px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+}
+
+.left{
+    padding: 10px 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex: 6;
+}
+
+.left-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-field{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+.text-field-area {
+    display: flex;
+}
+
+.text-field-area input {
+    border: none;
+}
+
+.text-field-area div {
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.text-field-area button {
+    padding: 10px;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right {
+    padding: 10px 20px;
+    /* border: 1px solid green; */
+    display: flex;
+    flex: 4;
+}
+
+.right-container {
+    position: relative;
+    top: 28px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-field {
+    padding: 10px;
+}
+.increament {
+    display: flex;
+    
+}
+.increament div {
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.count {
+    padding: 5px 10px;
+}
+
+.label {
+    display: flex;
+}
+
+.lebel div {
+    background: lightgray;
+    padding: 3px 3px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.left-btn {
+    background: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.right-btn {
+    background: lightgray;
+    border: none;
+    padding: 5px 10px;
+}
