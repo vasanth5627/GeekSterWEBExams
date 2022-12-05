@@ -12,14 +12,22 @@ decrease_div.addEventListener("click",function(){
     }
     else{
         digit_div.style.color='red';
-        window.setTimeout(msgappear,100);
+        msg_div.style.display = 'block';
+        msgappear()
     }
 });
 
 
 
+
+
+
+
 function msgappear(){
-    msg_div.style.display = 'block';
+    setTimeout(function(){
+        msg_div.style.display = 'none';
+    },2000);
+    
 }
 
 increase_div.addEventListener("click",function(){
