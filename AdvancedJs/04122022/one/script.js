@@ -11,6 +11,7 @@ decrease_div.addEventListener("click",function(){
         digit_div.textContent=val;
     }
     else{
+        digit_div.style.color='red';
         window.setTimeout(msgappear,100);
     }
 });
@@ -24,11 +25,13 @@ function msgappear(){
 increase_div.addEventListener("click",function(){
     val++;
     digit_div.textContent = val;
+    digit_div.style.color = 'green';
     msg_div.style.display = 'none';
 })
 
 reset_div.addEventListener("click",function(){
     val=0;
     digit_div.textContent=val;
+    digit_div.style.color = 'black';
     msg_div.style.display = 'none';
 })
