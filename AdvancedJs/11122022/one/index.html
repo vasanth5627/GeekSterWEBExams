@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Validation</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Create Your Account</h1>
-    <form name="myform" onsubmit="return validateForm()" method="post">
-        <div class="form-design" id="name">
-            Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="fname" required> <span class="formerror"></span>
-        </div>
+    <table>
+        <tr>
+            <td>
+              
+                <form action="" autocomplete="on" onsubmit="event.preventDefault();return validateForm()" name="myform">
+                    <div id="name1">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required placeholder="Enter your name"><span class="formerror"></span>
+                    </div>
 
-        <div class="form-design" id="email">
-            Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="femail" required> <span class="formerror"></span>
-        </div>
+                    <div id="emailid">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Enter your email id"><span class="formerror"></span>
+                    </div>
 
-        <div class="form-design" id="phone">
-            Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="phone" name="fphone"> <span class="formerror"></span>
-        </div>
+                    <div id="passid">
+                        <label for="pass">Set Password</label>
+                        <input type="password" name="password" id="pass" required placeholder="Set a password"><span class="formerror"></span>
+                    </div>
 
-        <div class="form-design" id="pass">
-            Password: <input type="password" name="cpass" required> <span class="formerror"></span>
-        </div>
+                    <div id="cpassid">
+                        <label for="cpass">Confirm Password</label>
+                        <input type="password" name="cpass" id="cpass" required placeholder="Confirm your password"><span class="formerror"></span>
+                    </div>
 
-        <div class="form-design" id="cpass">
-            Confirm Password: <input type="password" name="fcpass" required><span class="formerror"></span>
-        </div>
-        <input type="submit" value="submit" class="but">
-        <script src="script.js"></script>
+                    <div id="btn" class="button">
+                        <input type="submit" value="Create">
+                    </div>
+                    
+                </form>
+            </td>
+            <td>
+                <!-- table to list all the records -->
+                <table class="list" id="employee-list">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-    </form> 
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+   </table> 
+   <script src="script.js"></script>
 </body>
-
 </html>
