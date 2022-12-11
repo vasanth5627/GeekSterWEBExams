@@ -9,10 +9,7 @@
 
     }
     function clearFormData(){
-        const form = document.forms['myform'].children;
-        for(let i=0;i<form.length-1;i++){
-            console.log(form[i].getElementsByTagName('input'))
-        }
+        document.getElementById("form").reset();
     }
 
     function readFormData(){
