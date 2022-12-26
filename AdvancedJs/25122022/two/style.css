@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav{
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.247);
+}
+
+label{
+    color: #ed6335;
+}
+
+#heading{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgba(73, 72, 72, 0.345);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.cards_container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
